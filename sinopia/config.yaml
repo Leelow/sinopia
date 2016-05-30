@@ -10,11 +10,13 @@
 storage: ./storage
 
 auth:
-  htpasswd:
-    file: ./htpasswd
-    # Maximum amount of users allowed to register, defaults to "+inf".
-    # You can set this to -1 to disable registration.
-    #max_users: 1000
+  request:
+    host: localhost
+    port: 3000
+    method: POST
+    adduser_route: /adduser
+    authenticate_route: /authenticate
+    password_encrypt: sha1
 
 # a list of other known repositories we can talk to
 uplinks:
