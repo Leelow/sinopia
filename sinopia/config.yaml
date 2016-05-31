@@ -12,10 +12,10 @@ storage: ./storage
 auth:
   request:
     host: localhost
-    port: 3000
+    port: 80
     method: POST
-    adduser_route: /adduser
-    authenticate_route: /authenticate
+    adduser_route: /sinopia/api/adduser
+    authenticate_route: /sinopia/api/authenticate
     password_encrypt: sha1
 
 # a list of other known repositories we can talk to
@@ -26,7 +26,7 @@ uplinks:
 packages:
   '@*/*':
     # scoped packages
-    access: $all
+    access: $authenticated
     publish: $authenticated
 
   '*':
@@ -35,7 +35,7 @@ packages:
     #
     # you can specify usernames/groupnames (depending on your auth plugin)
     # and three keywords: "$all", "$anonymous", "$authenticated"
-    access: $all
+    access: $authenticated
 
     # allow all known users to publish packages
     # (anyone can register by default, remember?)
