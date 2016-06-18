@@ -15,7 +15,6 @@
     "sinopia": "./bin/sinopia"
   },
   "dependencies": {
-    "jsonstream": "1.x",
     "async": ">=0.9.0 <1.0.0-0",
     "body-parser": "^1.15.1",
     "bunyan": ">=0.22.1 <2.0.0-0",
@@ -27,10 +26,12 @@
     "express": ">=5.0.0-0 <6.0.0-0",
     "express-json5": ">=0.1.0 <1.0.0-0",
     "handlebars": "2.x",
+    "hat": "0.0.3",
     "highlight.js": "8.x",
     "http-errors": ">=1.2.0",
     "jju": "1.x",
     "js-yaml": ">=3.0.1 <4.0.0-0",
+    "jsonstream": "1.x",
     "lunr": ">=0.5.2 <1.0.0-0",
     "minimatch": ">=0.2.14 <2.0.0-0",
     "mkdirp": ">=0.3.5 <1.0.0-0",
