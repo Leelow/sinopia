@@ -15,7 +15,7 @@
     "sinopia": "./bin/sinopia"
   },
   "dependencies": {
-    "JSONStream": "1.x",
+    "jsonstream": "1.x",
     "async": ">=0.9.0 <1.0.0-0",
     "body-parser": "^1.15.1",
     "bunyan": ">=0.22.1 <2.0.0-0",
