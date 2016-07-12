@@ -8,6 +8,7 @@
 
 # path to a directory with all packages
 storage: ./storage
+url_prefix: https://dev.company.local/sinopia/
 
 auth:
   request:
