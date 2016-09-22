@@ -11,13 +11,13 @@ storage: ./storage
 url_prefix: https://dev.company.local/sinopia/
 
 auth:
-  request:
-    host: localhost
-    port: 80
-    method: POST
-    adduser_route: /sinopia/api/adduser
-    authenticate_route: /sinopia/api/authenticate
-    password_encrypt: sha1
+  mongodb:
+    host: 10.8.0.1
+    port: 27017
+    login: ""
+    password: ""
+    database: "uapp"
+
 
 # a list of other known repositories we can talk to
 uplinks:
